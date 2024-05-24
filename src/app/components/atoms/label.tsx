@@ -14,13 +14,13 @@ const Label: React.FC<ILabelProps> = ({
   mode = "subtitle",
 }) => {
   const classNames = classnames("not-italic leading-snug", {
-    ["text-white text-[52px] font-bold !leading-[68px]"]: mode === "heading",
-    ["text-black text-[40px] !font-semibold"]: mode === "title",
-    ["text-black text-xl !font-normal"]: mode === "subtitle",
-    ["text-gray-light text-2xl !font-semibold"]: mode === "note",
+    ["text-white text-[52px] font-bold leading-[68px]"]: mode === "heading",
+    ["text-black text-[40px] font-semibold"]: mode === "title",
+    ["text-black text-xl font-normal"]: mode === "subtitle",
+    ["text-gray-light text-2xl font-semibold"]: mode === "note",
     [className as string]: className,
   });
-  return <p className={classNames}>{text}</p>;
+  return <div className={classNames}>{text}</div>;
 };
 
 export default Label;

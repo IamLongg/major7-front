@@ -58,7 +58,7 @@ const Button: React.FC<IButtonProps> = ({
       <button
         onClick={handleClick}
         type={type}
-        className={`${classNamesProps} text-white py-4 px-8 bg-orange rounded-[20px]`}
+        className={`${classNamesProps} !text-white py-4 px-8 bg-orange rounded-[20px]`}
         disabled={disabled}
       >
         <span className={labelClassNames}>{textBtnPrimary}</span>
@@ -66,7 +66,7 @@ const Button: React.FC<IButtonProps> = ({
       <button
         onClick={handleClick}
         type={type}
-        className={`${classNamesProps} text-blackOd py-4 px-8 bg-white rounded-3xl`}
+        className={`${classNamesProps} !text-blackOd py-4 px-8 bg-white rounded-3xl`}
         disabled={disabled}
       >
         <span className={labelClassNames}>{textBtnSecondary}</span>
